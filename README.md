@@ -1,3 +1,9 @@
+# start on server:
+nohup easy-novnc -a :8081 >/dev/null 2>&1 &
+
+# visit from browser:
+http://<server ip>:8081/vnc.html?host=<server ip>&port=8081&path=vnc
+
 # easy-novnc
 An easy way to run a [noVNC](https://github.com/novnc/noVNC) instance and proxy with a single binary.
 
